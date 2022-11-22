@@ -15,6 +15,9 @@
     
 
 }
+html{
+    scroll-behavior: smooth;
+}
 a{
     color: var(--color-padrao2);
     text-decoration: none;
@@ -105,7 +108,10 @@ section{
     gap: 30px;
 }
 .btn-inicio-primary{
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
     background-color: var(--cor-principal);
     width: 150px;
     height: 40px;
@@ -115,7 +121,10 @@ section{
 }
 
 .btn-inicio-secundary{
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
     background-color: var(--cor-padrao);
     width: 150px;
     height: 40px;
@@ -139,6 +148,112 @@ section{
     
 
 }
+.sobre{
+    background-color: var(--cor-detalhes);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+   
+
+}
+.sobre-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sobre-text > h1{
+    color: var(--cor-padrao);
+}
+.sobre-text > p{
+    color: var(--cor-principal);
+}
+.sobre-text > ul >li{
+    color: var(--color-cinza);
+    list-style-image: url("/image/check.png");
+    padding: 10px;
+}
+.sobre-text > ul >li:hover{
+
+}
+
+.check{
+    color: var(--cor-principal);
+}
+
+.sobre-text{
+ width: 400px;
+ height: 300px;
+}
+.btn-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--cor-principal);
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    color: var(--cor-padrao);
+    border-radius: 5px;
+}
+.btn-sobre{
+    background-color: orangered;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.aulas{
+    background-image: url(/image/background-treinadores.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+ 
+}
+.content-sobre{
+    width: 400px;
+    height:300px;
+    padding: 20px;
+    background-color: var(--cor-detalhes);
+}
+.content-text{
+    width: 400px;
+    height:300px;
+    padding: 20px;
+}
+.direcionar1{
+    display: flex;
+    gap: 30px;
+}
+
+.direcionar2{
+    display: flex;
+    gap: 30px;
+}
+.distanciar-texto-aulas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.distanciar-texto-aulas > span{
+    font-size: 3rem;
+    color: var(--color-cinza);
+}
+.content-sobre-text{
+    width :80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+
+
 
 @media screen and (max-width:1023px){
     header{
@@ -158,11 +273,62 @@ section{
     .inicio-text{
         
     }
+    .sobre{
+        flex-direction: column-reverse;
+    }
+    .aulas{
+        flex-direction: row;
+    }
+    .direcionar1{
+        flex-direction: column;
+    }
+    .direcionar2{
+        flex-direction: column;
+    }
+    .content-sobre{
+        width: 300px;
+        height:250px;
+        
+    }
+    .content-text{
+        width: 300px;
+        height:250px;
+    }
+  
 
 }
 @media screen and (max-width:640px){
+    .aulas{
+        height: 1900px;
+    }
+    .inicio-texto{
+        width: 300px;
+    }
     .img-peso{
         width: 300px;
         height: 300px;
     }
+    .img-sobre{
+        width: 300px;
+        height: 300px;
+    }
+    .aulas{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content-sobre{
+        width: 300px;
+        height:260px;
+        
+    }
+    .content-text{
+        width: 300px;
+        height:260px;
+    }
+    .content-sobre-text{
+      
+        gap: 10px;
+    }
 }
+
