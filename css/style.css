@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    outline: 1px solid black;
+    
 }
 :root{
     --cor-principal: #FF5C00;
@@ -19,6 +19,19 @@ a{
     color: var(--color-padrao2);
     text-decoration: none;
 }
+body::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #333;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 20px;
+  
+  }
 header{
     display: flex;
     align-items: center;
@@ -55,10 +68,12 @@ transition: 0.1s;
     border-radius: 10px;
     background-color: var(--cor-padrao);
     border: 1px solid rgba(128, 128, 128, 0.557);
+    visibility: hidden;
 }
 .btn-menu:hover{
     background-color: rgba(128, 128, 128, 0.16);
     transition: 0.5s;
+    
 }
 section{
     height: 100vh;
@@ -73,15 +88,52 @@ section{
 .inicio-texto{
     width: 400px;
     height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 .inicio-p{
     
     color: var(--cor-principal);
-    color: none;
+   
 }
-.inicio-texto > p{
+.inicio-p2{
     color: var(--color-cinza);
 }
+.btns-inicio{
+    display: flex;
+    gap: 30px;
+}
+.btn-inicio-primary{
+    padding: 10px;
+    background-color: var(--cor-principal);
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    color: var(--cor-padrao);
+    border-radius: 5px;
+}
+
+.btn-inicio-secundary{
+    padding: 10px;
+    background-color: var(--cor-padrao);
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    color: var(--color-padrao2);
+    border-radius: 5px;
+}
+.btn-inicio-primary:hover{
+    background-color: orangered;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn-inicio-secundary:hover{
+    background-color: var(--color-cinza);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 
 .inicio-img{
     
@@ -95,8 +147,22 @@ section{
     .lista-header{
         display: none;
     }
+    .btn-menu{
+        visibility: visible;
+    }
+    .inicio{
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .inicio-text{
+        
+    }
 
 }
 @media screen and (max-width:640px){
-    
+    .img-peso{
+        width: 300px;
+        height: 300px;
+    }
 }
