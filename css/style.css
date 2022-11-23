@@ -7,11 +7,11 @@
 }
 :root{
     --cor-principal: #FF5C00;
-    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo: #e7e7e7;
     --cor-detalhes: #222222;
     --cor-padrao: #FFFFFF;
     --color-padrao2:#000;
-    --color-cinza: #686A6F;
+    --color-cinza: #9F9F9F;
     
 
 }
@@ -89,8 +89,9 @@ section{
     gap: 50px;
 }
 .inicio-texto{
-    width: 400px;
-    height: 400px;
+    margin-top: 100px;
+    width: 600px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -98,14 +99,33 @@ section{
 .inicio-p{
     
     color: var(--cor-principal);
-   
+    font-size: 1.5rem;
 }
 .inicio-p2{
     color: var(--color-cinza);
+    font-size: 1.5rem;
+}
+.inicio-texto > h1{
+    font-size: 2.0rem;
 }
 .btns-inicio{
     display: flex;
     gap: 30px;
+}
+.voltar{
+    width: 60px;
+    height: 60px;
+    background-color: var(--cor-padrao);
+    color: var(--color-cinza);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 .btn-inicio-primary{
     display: flex;
@@ -219,6 +239,14 @@ section{
     height:300px;
     padding: 20px;
     background-color: var(--cor-detalhes);
+    
+}
+.texto-aulas{
+ 
+
+}
+.sobre-text > h1{
+    font-size: 2.0rem;
 }
 .content-text{
     width: 400px;
@@ -249,13 +277,133 @@ section{
     flex-direction: column;
     gap: 30px;
 }
+.tipos-de-treinos{
+    color: var(--cor-padrao);
+}
+.texto-treinos{
+    color: var(--color-cinza);
+    font-weight: 100;
+}
+.skills-aulas{
+    background-color: var(--cor-principal);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    gap: 30px;
+    
+}
+.skills-aulas > div{
+    border-bottom: 3px solid var(--cor-padrao);
+    color: var(--cor-padrao);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skills-aulas > div > p:nth-child(1){
+    font-size: 2.0rem;
+}
+.treinadores{
+    background-color: var(--cor-de-fundo);
+    
+}
+.nossos-treinadores{
+    height: 400px;
+    background-image: url(/image/young-man-sportswear-exercise-class-gym\ 1\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.nossos-treinadores > h1{
+    font-size: 2.0rem;
+    color: var(--cor-padrao);
+    border-bottom: 3px solid var(--cor-principal);
+}
+.treinadores-tipos{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+    
+   
+}
+.treinadores-tipos > div{
+    width: 20%;
+    height: 450px;
+    border-radius: 10px;
+    filter: 1px 1px 10px gray;
+
+    background-color: var(--cor-padrao);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  
+    overflow: hidden;
+}
+.treinadores-tipos > div > div > span > i{
+    color: cyan;
+    padding: 5px;
+}
+.treinadores-tipos > div > div > span{
+    color: var(--color-cinza);
+}
+
+
+
+.treinadores-tipos > div > img{
+    width: 100%;
+    max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.treinadores-tipos > div > img:hover{
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
+.treinadores-texto{
+        display: flex;   
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 70px;
+
+}
+.nome-treinadores{
+    font-size: 1.5rem;
+}
+.localizacao-treinadores{
+    display: inline;
+}
+.avaliacoes{
+    height: 200px;
+    background-color: var(--cor-detalhes);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    color: var(--cor-padrao);
+    
+    
+}
+.avaliacoes > div{
+    text-align: center;
+    font-size: 2.0rem;
+    flex: wrap;
+               
+}
 
 
 
 
-
-
-@media screen and (max-width:1023px){
+@media screen and (max-width:1215px){
     header{
         justify-content: space-between;
     }
@@ -270,14 +418,15 @@ section{
         gap: 10px;
         
     }
-    .inicio-text{
-        
+    .inicio-text0{
+        margin-top: 120px;
     }
     .sobre{
         flex-direction: column-reverse;
     }
     .aulas{
         flex-direction: row;
+        height: 1200px;
     }
     .direcionar1{
         flex-direction: column;
@@ -287,17 +436,40 @@ section{
     }
     .content-sobre{
         width: 300px;
-        height:250px;
+        height:300px;
         
     }
     .content-text{
         width: 300px;
-        height:250px;
+        height:300px;
     }
-  
-
+    .treinadores-tipos > div:nth-child(1){
+    display: none;
+        
+    }
+    .treinadores-tipos > div{
+        width: 30%;
+        height: 450px;
+   
+            
+        }
+        .treinadores-tipos > div >img{
+            width:  100%;
+            height: 350px;
+                
+            }
+            .treinadores-tipos > div > i{
+                color: #009EFF;
+            }
+            .avaliacoes{
+            flex-direction: column;
+               
+                
+                
+            }
+          
 }
-@media screen and (max-width:640px){
+@media screen and (max-width:740px){
     .aulas{
         height: 1900px;
     }
@@ -329,6 +501,9 @@ section{
     .content-sobre-text{
       
         gap: 10px;
+    }
+    .treinadores{
+        display: none;
     }
 }
 
