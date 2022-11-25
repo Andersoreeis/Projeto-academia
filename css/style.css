@@ -1,66 +1,75 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
 }
-:root{
+
+:root {
     --cor-principal: #FF5C00;
     --cor-de-fundo: #e7e7e7;
     --cor-detalhes: #222222;
     --cor-padrao: #FFFFFF;
-    --color-padrao2:#000;
+    --color-padrao2: #000;
     --color-cinza: #9F9F9F;
-    
-
 }
-html{
+
+.white {
+    color: var(--cor-padrao);
+}
+
+html {
     scroll-behavior: smooth;
 }
-a{
+
+a {
     color: var(--color-padrao2);
     text-decoration: none;
 }
+
 body::-webkit-scrollbar {
     width: 15px;
-  }
-  
-  body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-track {
     background: #333;
-  }
-  
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     background-color: #fff;
     border-radius: 20px;
-  
-  }
-header{
+}
+
+header {
     display: flex;
     align-items: center;
     height: 100px;
     background-color: var(--cor-padrao);
-   padding: 30px 50px;
-   filter: drop-shadow(1px 1px 10px gray);
-   position: sticky;
-   top: 0px;
-
+    padding: 30px 50px;
+    filter: drop-shadow(1px 1px 10px gray);
+    position: sticky;
+    top: 0px;
 }
-.lista-header{
+
+.lista-header {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 50px;
 }
 
-.lista-header > li{
+.lista-header>li {
     list-style-type: none;
 }
-.lista-header > li > a:hover{
-color: var(--cor-principal);
-transition: 0.1s;
+
+.lista-header>li>a:hover {
+    color: var(--cor-principal);
+    transition: 0.1s;
 }
-.btn-menu{
+
+.btn-menu {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -73,437 +82,28 @@ transition: 0.1s;
     border: 1px solid rgba(128, 128, 128, 0.557);
     visibility: hidden;
 }
-.btn-menu:hover{
+
+.btn-menu:hover {
     background-color: rgba(128, 128, 128, 0.16);
     transition: 0.5s;
-    
 }
-section{
+
+section {
     height: 100vh;
 }
-.inicio{
-    background-color: var(--cor-de-fundo);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-}
-.inicio-texto{
-    margin-top: 100px;
-    width: 600px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-.inicio-p{
-    
-    color: var(--cor-principal);
-    font-size: 1.5rem;
-}
-.inicio-p2{
-    color: var(--color-cinza);
-    font-size: 1.5rem;
-}
-.inicio-texto > h1{
-    font-size: 2.0rem;
-}
-.btns-inicio{
-    display: flex;
-    gap: 30px;
-}
-.voltar{
-    width: 60px;
-    height: 60px;
-    background-color: var(--cor-padrao);
-    color: var(--color-cinza);
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-.btn-inicio-primary{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: var(--cor-principal);
-    width: 150px;
-    height: 40px;
-    text-align: center;
-    color: var(--cor-padrao);
-    border-radius: 5px;
-}
 
-.btn-inicio-secundary{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: var(--cor-padrao);
-    width: 150px;
-    height: 40px;
-    text-align: center;
-    color: var(--color-padrao2);
-    border-radius: 5px;
-}
-.btn-inicio-primary:hover{
-    background-color: orangered;
-    transition: 0.5s;
-    cursor: pointer;
-}
-.btn-inicio-secundary:hover{
-    background-color: var(--color-cinza);
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-
-.inicio-img{
-    
-
-}
-.sobre{
-    background-color: var(--cor-detalhes);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-   
-
-}
-.sobre-text{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.sobre-text > h1{
-    color: var(--cor-padrao);
-}
-.sobre-text > p{
-    color: var(--cor-principal);
-}
-.sobre-text > ul >li{
-    color: var(--color-cinza);
-    list-style-image: url("/image/check.png");
-    padding: 10px;
-}
-.sobre-text > ul >li:hover{
-
-}
-
-.check{
-    color: var(--cor-principal);
-}
-
-.sobre-text{
- width: 400px;
- height: 300px;
-}
-.btn-sobre{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: var(--cor-principal);
-    width: 150px;
-    height: 40px;
-    text-align: center;
-    color: var(--cor-padrao);
-    border-radius: 5px;
-}
-.btn-sobre{
-    background-color: orangered;
-    transition: 0.5s;
-    cursor: pointer;
-}
-.aulas{
-    background-image: url(/image/background-treinadores.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
- 
-}
-.content-sobre{
-    width: 400px;
-    height:300px;
-    padding: 20px;
-    background-color: var(--cor-detalhes);
-    
-}
-.texto-aulas{
- 
-
-}
-.sobre-text > h1{
-    font-size: 2.0rem;
-}
-.content-text{
-    width: 400px;
-    height:300px;
-    padding: 20px;
-}
-.direcionar1{
-    display: flex;
-    gap: 30px;
-}
-
-.direcionar2{
-    display: flex;
-    gap: 30px;
-}
-.distanciar-texto-aulas{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.distanciar-texto-aulas > span{
-    font-size: 3rem;
-    color: var(--color-cinza);
-}
-.content-sobre-text{
-    width :80%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-.tipos-de-treinos{
-    color: var(--cor-padrao);
-}
-.texto-treinos{
-    color: var(--color-cinza);
-    font-weight: 100;
-}
-.skills-aulas{
-    background-color: var(--cor-principal);
-    display: flex;
-    flex-direction: column;
-    padding: 20px 50px;
-    gap: 30px;
-    
-}
-.skills-aulas > div{
-    border-bottom: 3px solid var(--cor-padrao);
-    color: var(--cor-padrao);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.skills-aulas > div > p:nth-child(1){
-    font-size: 2.0rem;
-}
-.treinadores{
-    background-color: var(--cor-de-fundo);
-    
-}
-.nossos-treinadores{
-    height: 400px;
-    background-image: url(/image/young-man-sportswear-exercise-class-gym\ 1\ \(1\).png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-
-}
-.nossos-treinadores > h1{
-    font-size: 2.0rem;
-    color: var(--cor-padrao);
-    border-bottom: 3px solid var(--cor-principal);
-}
-.treinadores-tipos{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    gap: 30px;
-    
-   
-}
-.treinadores-tipos > div{
-    width: 20%;
-    height: 450px;
-    border-radius: 10px;
-    filter: 1px 1px 10px gray;
-
-    background-color: var(--cor-padrao);
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  
-    overflow: hidden;
-}
-.treinadores-tipos > div > div > span > i{
-    color: cyan;
-    padding: 5px;
-}
-.treinadores-tipos > div > div > span{
-    color: var(--color-cinza);
-}
-
-
-
-.treinadores-tipos > div > img{
-    width: 100%;
-    max-width: 100%;
-  -moz-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  overflow: hidden;
-}
-.treinadores-tipos > div > img:hover{
-    -moz-transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    transform: scale(1.02);
-}
-.treinadores-texto{
-        display: flex;   
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 70px;
-
-}
-.nome-treinadores{
-    font-size: 1.5rem;
-}
-.localizacao-treinadores{
-    display: inline;
-}
-.avaliacoes{
-    height: 200px;
-    background-color: var(--cor-detalhes);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 1.5rem;
-    color: var(--cor-padrao);
-    
-    
-}
-.avaliacoes > div{
-    text-align: center;
-    font-size: 2.0rem;
-    flex: wrap;
-               
-}
-
-
-
-
-@media screen and (max-width:1215px){
-    header{
+@media screen and (max-width:1250px) {
+    header {
         justify-content: space-between;
     }
-    .lista-header{
+    .lista-header {
         display: none;
     }
-    .btn-menu{
+    .btn-menu {
         visibility: visible;
     }
-    .inicio{
+    .inicio {
         flex-direction: column;
         gap: 10px;
-        
-    }
-    .inicio-text0{
-        margin-top: 120px;
-    }
-    .sobre{
-        flex-direction: column-reverse;
-    }
-    .aulas{
-        flex-direction: row;
-        height: 1200px;
-    }
-    .direcionar1{
-        flex-direction: column;
-    }
-    .direcionar2{
-        flex-direction: column;
-    }
-    .content-sobre{
-        width: 300px;
-        height:300px;
-        
-    }
-    .content-text{
-        width: 300px;
-        height:300px;
-    }
-    .treinadores-tipos > div:nth-child(1){
-    display: none;
-        
-    }
-    .treinadores-tipos > div{
-        width: 30%;
-        height: 450px;
-   
-            
-        }
-        .treinadores-tipos > div >img{
-            width:  100%;
-            height: 350px;
-                
-            }
-            .treinadores-tipos > div > i{
-                color: #009EFF;
-            }
-            .avaliacoes{
-            flex-direction: column;
-               
-                
-                
-            }
-          
-}
-@media screen and (max-width:740px){
-    .aulas{
-        height: 1900px;
-    }
-    .inicio-texto{
-        width: 300px;
-    }
-    .img-peso{
-        width: 300px;
-        height: 300px;
-    }
-    .img-sobre{
-        width: 300px;
-        height: 300px;
-    }
-    .aulas{
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .content-sobre{
-        width: 300px;
-        height:260px;
-        
-    }
-    .content-text{
-        width: 300px;
-        height:260px;
-    }
-    .content-sobre-text{
-      
-        gap: 10px;
-    }
-    .treinadores{
-        display: none;
     }
 }
-
