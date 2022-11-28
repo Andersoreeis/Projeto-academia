@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    height: 900px;
 }
 
 .content-sobre {
@@ -15,6 +16,7 @@
     height: 300px;
     padding: 20px;
     background-color: var(--cor-detalhes);
+    
 }
 
 .sobre-text>h1 {

@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
-    height: 900px;
+    height: 700px;
 }
 
 .sobre-text {
@@ -23,7 +23,7 @@
 
 .sobre-text>ul>li {
     color: var(--color-cinza);
-    list-style-image: url("/image/check.png");
+    list-style-image: url("../image/check.png");
     padding: 10px;
 }
 
@@ -44,9 +44,13 @@
     background-color: var(--cor-principal);
     width: 150px;
     height: 40px;
+    padding: 25px;
     text-align: center;
     color: var(--cor-padrao);
     border-radius: 5px;
+}
+.btn-sobre >a{
+    color: var(--cor-padrao);
 }
 
 .btn-sobre {

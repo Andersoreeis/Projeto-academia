@@ -1,5 +1,6 @@
 .treinadores {
     background-color: var(--cor-de-fundo);
+    height: 900px;
 }
 
 .nossos-treinadores {
@@ -30,7 +31,7 @@
     width: 20%;
     height: 380px;
     border-radius: 10px;
-    filter: 1px 1px 10px gray;
+    filter: drop-shadow(1px 1px 10px gray);
     background-color: var(--cor-padrao);
     display: flex;
     flex-direction: column;
@@ -77,7 +78,7 @@
     display: inline;
 }
 
-@media screen and (max-width:1350px) {
+@media screen and (max-width:1250px) {
     .treinadores {
         height: 900px;
     }
@@ -97,7 +98,7 @@
     }
 }
 
-@media screen and (max-width:740px) {
+@media screen and (max-width:750px) {
     .treinadores {
         display: none;
     }
