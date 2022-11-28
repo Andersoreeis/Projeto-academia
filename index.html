@@ -14,11 +14,14 @@
     <link rel="stylesheet" href="css/avaliacoes.css">
     <link rel="stylesheet" href="css/depoimento.css">
     <link rel="stylesheet" href="css/planos.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Quicksand:wght@300;600&family=Signika:wght@400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Quicksand:wght@300;600&family=Signika:wght@400;600&display=swap"
+        rel="stylesheet">
 
 
     <script src="https://kit.fontawesome.com/7dfd3e2b4c.js" crossorigin="anonymous"></script>
@@ -26,16 +29,33 @@
 </head>
 
 <body>
+    <div class="menuBar">
+        <div>
+            <img src="./image/logo-academia.png" alt="logo" width="100px" height="100px">
+            <div class="btnVoltar"><i class="fa-solid fa-x"></i></div>
 
-    <header>
-        <a href="index.html"><img src="./image/logo-academia.png" alt="logo" width="100px" height="100px"></a>
-        <ul class="lista-header">
+        </div>
+        <ul class="lista-menu">
             <li><a href="#sobre">SOBRE</a></li>
             <li><a href="#aulas">AULAS</a></li>
             <li><a href="#treinadores">TREINADORES</a></li>
             <li><a href="#planos">PLANOS</a></li>
             <li><a href="#depoimento">DEPOIMENTO</a></li>
             <li><a href="#contatos">CONTATO</a></li>
+        </ul>
+
+    </div>
+    <div class="paredeFechar"></div>
+
+    <header>
+        <a href="index.html"><img src="./image/logo-academia.png" alt="logo" width="100px" height="100px"></a>
+        <ul class="lista-header">
+            <li><a href="#sobre" class="linkMenu">SOBRE</a></li>
+            <li><a href="#aulas" class="linkMenu">AULAS</a></li>
+            <li><a href="#treinadores" class="linkMenu">TREINADORES</a></li>
+            <li><a href="#planos" class="linkMenu">PLANOS</a></li>
+            <li><a href="#depoimento" class="linkMenu">DEPOIMENTO</a></li>
+            <li><a href="#contatos" class="linkMenu">CONTATO</a></li>
         </ul>
 
         <div class="btn-menu">
@@ -98,7 +118,9 @@
                     <p style="color: var(--cor-principal); margin-top: 10px;">Tempo real para fitness</p>
                     <h2 style="color: var(--cor-padrao); font-size: 2.0rem; margin-top: 10px;">Serviços para você
                     </h2>
-                    <p style="color: var(--cor-padrao);margin-top: 10px;">Os clientes da nossa academia recebem não apenas o equipamento necessário para seus treinos, mas também um suporte amigável para atingir seu objetivo número um de treinamento.
+                    <p style="color: var(--cor-padrao);margin-top: 10px;">Os clientes da nossa academia recebem não
+                        apenas o equipamento necessário para seus treinos, mas também um suporte amigável para atingir
+                        seu objetivo número um de treinamento.
                     </p>
                 </div>
 
@@ -358,7 +380,7 @@
                 </div>
             </div>
             <div class="enviar-mensagem">
-                <form  method="GET">
+                <form method="GET">
                     <label for="">Nome</label>
                     <input type="text" name="Nome" id="nomeImput">
 
@@ -417,9 +439,10 @@
         </div>
 
     </footer>
-    <div  class="footer-direitos">
+    <div class="footer-direitos">
         <p class="cinza">Todos os direitos Reservados | Anderson Reis</p>
     </div>
+    <script src="./menu.js"></script>
 </body>
 
 </html>
