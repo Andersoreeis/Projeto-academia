@@ -3,14 +3,14 @@
 .paredeFechar{
     position: fixed;
     right: -1000px;
-    width: 50vw;
+    width: 25vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.255);
    transition: 5ms;
     z-index: 8;
 }
 .menuBar{
-    width: 50vw;
+    width: 75vw;
     background-color: var(--cor-padrao);
     height: 100vh;
     position: fixed;
@@ -27,7 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+   
 
 }
 .btnVoltar{
@@ -46,10 +46,12 @@
 }
 
 .menuBar>ul>li{
-    padding: 30px;
+    padding: 20px;
     border-bottom: 1px solid var(--color-cinza);
     cursor: pointer;
-
+    
+    width: 100%;
+    
 }
 .menuBar>ul>li>a{
     padding: 20px;
@@ -59,6 +61,8 @@
 }
 .menuBar>ul>li:hover{
     color: var(--cor-principal);
+    
+   
 }
 .btn-menu.active{}
 .menuBar.active{
