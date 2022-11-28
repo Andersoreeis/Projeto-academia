@@ -98,3 +98,9 @@
         width: 300px;
     }
 }
+@media screen and (max-width:750px) {
+   
+    .inicio-texto {
+        margin-top: 100px;
+    }
+}
