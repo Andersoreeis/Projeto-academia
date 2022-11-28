@@ -74,6 +74,9 @@
 }
 
 @media screen and (max-width:740px) {
+    .sobre{
+        height: 900px;
+    }
     .img-peso {
         width: 300px;
         height: 300px;
