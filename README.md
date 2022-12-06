@@ -6,5 +6,6 @@
 * CSS
 * JAVASCRIPT
 ### Autor: Anderson Reis
-[Figma](https://www.figma.com/file/HxxJM1N8e3qzo5IboEbNpV/Untitled?t=YlR7gKE3FKWaEiRD-0)
+![](./image/image.png)
+[Figma](https://www.figma.com/file/HxxJM1N8e3qzo5IboEbNpV/Untitled?t=YlR7gKE3FKWaEiRD-0)<br>
 [Github](https://andersoreeis.github.io/Projeto-academia/)
