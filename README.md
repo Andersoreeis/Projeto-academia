@@ -5,7 +5,8 @@
 * HTML
 * CSS
 * JAVASCRIPT
-### Autor: Anderson Reis
+### Autor: Anderson Reis [Meu github](https://github.com/Andersoreeis)
+
 ![](./image/image.png)
 [Figma](https://www.figma.com/file/HxxJM1N8e3qzo5IboEbNpV/Untitled?t=YlR7gKE3FKWaEiRD-0)<br>
-[Github](https://andersoreeis.github.io/Projeto-academia/)
+[Site](https://andersoreeis.github.io/Projeto-academia/)

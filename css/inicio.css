@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
-    height: 700px;
+    height: 800px;
     padding: 20px;
 }
 
@@ -92,14 +92,14 @@
 
 @media screen and (max-width:1250px) {
     .inicio {
-      height: 1000px;
+        height: 1200px;
     }
     .inicio-texto {
         width: 300px;
     }
 }
+
 @media screen and (max-width:750px) {
-   
     .inicio-texto {
         margin-top: 100px;
     }
