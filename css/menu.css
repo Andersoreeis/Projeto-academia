@@ -2,7 +2,7 @@
 
 .paredeFechar{
     position: fixed;
-    right: -1500px;
+    right: -3500px;
     width: 25vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.255);
@@ -15,7 +15,7 @@
     height: 100vh;
     position: fixed;
     top: 0px;
-    left: -1500px;
+    left: -3500px;
     z-index: 7;
     display: flex;
     flex-direction: column;
